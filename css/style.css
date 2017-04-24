@@ -1,0 +1,56 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Avenir';
+}
+
+body {
+  /*background-color: #272727;*/
+  background: url("../images/space.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+form {
+  background-color: #FF652F;
+  width: 100%;
+  padding: 5px;
+}
+
+input {
+  height: 20px;
+}
+
+button {
+  padding: 5px;
+}
+
+h2 {
+  color: #FFE400;
+  padding: 10px;
+}
+
+.circle {
+  border-radius: 50%;
+  margin-left: 100px;
+  position: absolute;
+  background: url("../images/moon.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  -webkit-animation: orbit 6s linear infinite;
+}
+
+.circle:hover {
+  background: url("../images/moon2.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+@-webkit-keyframes orbit {
+  0%  { -webkit-transform: rotate(0deg) translateX(5px) translateY(120px) rotate(0deg) scale(1); }
+  25%  { -webkit-transform: rotate(90deg) translateX(5px) translateY(120px) rotate(-90deg) scale(.75); }
+  50%  { -webkit-transform: rotate(180deg) translateX(5px) translateY(120px) rotate(-180deg) scale(.60); }
+  75%  { -webkit-transform: rotate(270deg) translateX(5px) translateY(120px) rotate(-270deg) scale(.75); }
+  100%  { -webkit-transform: rotate(360deg) translateX(5px) translateY(120px) rotate(-360deg) scale(1); }
+}
