@@ -14,3 +14,7 @@ function calcArea(){
 function reload() {
     location.reload();
 }
+
+window.onload = function() {
+    document.getElementById("my_audio").play();
+}
