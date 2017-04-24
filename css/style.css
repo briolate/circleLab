@@ -29,6 +29,7 @@ button {
 h2 {
   color: #FFE400;
   padding: 10px;
+  font-family: monospace;
 }
 
 .circle {
